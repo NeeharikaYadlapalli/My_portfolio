@@ -13,7 +13,7 @@ export const experienceData = [
       "**API GPT** — centralized platform automatically generating MCP servers using *Gemini LLM on Vertex AI* with **95% uptime**, processing queries across **100+ integrated APIs**. Built end-to-end system converting API contracts into deployable Python MCP servers with **sub-500ms query routing** and **92% accuracy** in API recommendations",
       "**MCP Code Generation Server** — engineered a comprehensive MCP server dynamically generating, executing, and displaying Python code with **90% code execution success rate** and average **3.2-second generation time** based on natural language queries, featuring integrated data visualization and real-time graphical output"
     ],
-    technologies: ["Gemini 2.0", "MCP", "LangGraph", "Vertex AI", "MongoDB", "Python", "FastAPI", "React", "GCP Cloud Run"],
+    technologies: ["Gemini 2.0", "MCP", "LangGraph", "Vertex AI", "MongoDB", "Python", "FastAPI", "GCP Cloud Run"],
     highlights: {
       retrievalAccuracy: "100%",
       queryResolution: "90%",
