@@ -1,0 +1,182 @@
+.projects-section {
+  padding: 5rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 1.75rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card:hover {
+  box-shadow: var(--glass-shadow-lift);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.project-card:hover .project-card-cta .arrow {
+  transform: translateX(3px);
+}
+
+.project-card-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+}
+
+.project-card-image-photo {
+  background-size: cover;
+  background-position: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.project-card-image-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, transparent 30%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
+}
+
+.project-card-image-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.45), transparent 60%),
+    radial-gradient(ellipse at 20% 90%, rgba(0, 0, 0, 0.06), transparent 60%);
+  pointer-events: none;
+}
+
+.project-card-num-overlay {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  align-self: flex-start;
+}
+
+.project-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  color: rgba(26, 24, 20, 0.55);
+  z-index: 1;
+}
+
+.project-card-watermark {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
+  color: rgba(26, 24, 20, 0.42);
+  z-index: 1;
+  text-align: right;
+}
+
+.project-card-body {
+  padding: 1.75rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-card-body .eyebrow {
+  margin-bottom: 0.75rem;
+}
+
+.project-card-title {
+  font-size: 1.875rem;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin: 0 0 0.35rem;
+}
+
+.project-card-subtitle {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+
+.project-card-description {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0 0 1.5rem;
+  flex: 1;
+}
+
+.project-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(26, 24, 20, 0.08);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+.project-card-tag-more {
+  background: transparent;
+  color: var(--text-subtle);
+}
+
+.project-card-cta {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-bottom: 1px solid var(--accent-soft);
+  align-self: flex-start;
+  padding-bottom: 0.1rem;
+}
+
+.project-card-cta .arrow {
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 720px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-body {
+    padding: 1.5rem 1.5rem 1.75rem;
+  }
+
+  .project-card-title {
+    font-size: 1.625rem;
+  }
+}

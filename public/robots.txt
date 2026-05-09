@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://portfolio-31jx.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow all bots to access the portfolio
+Disallow:
