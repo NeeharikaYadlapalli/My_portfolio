@@ -1,19 +1,19 @@
 export const experienceData = [
   {
     id: 1,
-    title: "Associate Technical Specialist, AI/ML",
+    title: "AI/ML Engineer — Intern → Associate Technical Specialist",
     company: "DigitalAPI.ai",
     location: "Bangalore, India",
-    duration: "Oct 2025 - Present",
-    type: "Full-Time",
-    description: "Architecting **enterprise agentic AI infrastructure** — multi-model assistants, **MCP gateways**, and real-time analytics platforms using Gemini and LangGraph.",
+    duration: "March 2025 - Present",
+    type: "Internship → Full-Time",
+    description: "Joined as an **AI/ML Engineering Intern** (March 2025) and converted to **Associate Technical Specialist** (Oct 2025). Architecting **enterprise agentic AI infrastructure** — multi-model assistants, **MCP gateways**, and real-time analytics platforms using *Gemini* and *LangGraph*.",
     achievements: [
       "**Engineered 'Analytics on Demand' Platform** — natural language-to-analytics agent using *Gemini 2.0* and **MCP**; built **5+ custom MCP tools** for autonomous cross-database querying (*MongoDB*) across millions of data rows. Generates dynamic visual dashboards in **under 3 seconds** per query — eliminating **15+ hours/week** of manual reporting at **100% retrieval accuracy**",
       "**ASK HELIX** — developed an intelligent chatbot using LLM and **MCP** framework achieving **90% query resolution accuracy**. Automated support for API management platform, enabling users to query API documentation, integration guidelines, and platform features through natural language processing",
       "**API GPT** — centralized platform automatically generating MCP servers using *Gemini LLM on Vertex AI* with **95% uptime**, processing queries across **100+ integrated APIs**. Built end-to-end system converting API contracts into deployable Python MCP servers with **sub-500ms query routing** and **92% accuracy** in API recommendations",
       "**MCP Code Generation Server** — engineered a comprehensive MCP server dynamically generating, executing, and displaying Python code with **90% code execution success rate** and average **3.2-second generation time** based on natural language queries, featuring integrated data visualization and real-time graphical output"
     ],
-    technologies: ["Gemini 2.0", "MCP", "LangGraph", "Vertex AI", "MongoDB", "Python", "FastAPI", "GCP Cloud Run"],
+    technologies: ["Gemini 2.0", "MCP", "LangGraph", "Vertex AI", "MongoDB", "Python", "FastAPI", "React", "GCP Cloud Run"],
     highlights: {
       retrievalAccuracy: "100%",
       queryResolution: "90%",
@@ -22,26 +22,6 @@ export const experienceData = [
     },
     image: null,
     imageAlt: "DigitalAPI.ai platform screenshot"
-  },
-  {
-    id: 2,
-    title: "Engineering Intern, AI/ML",
-    company: "DigitalAPI.ai",
-    location: "Bangalore, India",
-    duration: "March 2025 - Oct 2025",
-    type: "Internship",
-    description: "Built **natural-language analytics agents** and **MCP-based tooling** using *Gemini* and *LangGraph* for enterprise API platforms.",
-    achievements: [
-      "Laid the foundation for agentic AI tooling and MCP-based workflows that later evolved into core platform products",
-      "Developed LLM integration pipelines, API contract analysis, and automated server generation workflows",
-      "Contributed to building the custom React documentation rendering engine for AI-enhanced API specifications"
-    ],
-    technologies: ["LangGraph", "MCP", "Gemini 2.0", "Python", "React", "FastAPI"],
-    highlights: {
-      focus: "Agentic Analytics & API Tooling"
-    },
-    image: null,
-    imageAlt: "Analytics on Demand dashboard"
   }
 ];
 
@@ -83,7 +63,11 @@ export const achievementsData = [
     issuer: "VIGNAN'S NIRULA Institute of Technology and Science for Women",
     date: "2024",
     description: "Awarded **Best Outgoing Student** among the B.Tech IT batch of **2020–2024** at VNITSW, recognizing top merit in academics, co-curriculars, and overall campus performance.",
-    skills: ["Academic Excellence", "Leadership", "Co-curriculars"]
+    skills: ["Academic Excellence", "Leadership", "Co-curriculars"],
+    images: [
+      { src: "/images/best-outgoing-1.jpeg", alt: "Best Outgoing Student award ceremony at VNITSW" },
+      { src: "/images/best-outgoing-2.jpeg", alt: "Best Outgoing Student recognition at VNITSW" }
+    ]
   },
   {
     id: 3,

@@ -32,8 +32,8 @@
   aspect-ratio: 16 / 9;
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding: 1.25rem 1.5rem;
   border-radius: var(--radius-md) var(--radius-md) 0 0;
   overflow: hidden;
@@ -83,15 +83,25 @@
   z-index: 1;
 }
 
+.project-card-image-gradient .project-card-num {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+}
+
 .project-card-watermark {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3.6vw, 2.75rem);
   letter-spacing: -0.02em;
-  color: rgba(26, 24, 20, 0.42);
+  color: rgba(26, 24, 20, 0.5);
   z-index: 1;
-  text-align: right;
+  text-align: center;
+  line-height: 1.15;
+  padding: 0 1rem;
+  max-width: 100%;
+  word-break: break-word;
 }
 
 .project-card-body {

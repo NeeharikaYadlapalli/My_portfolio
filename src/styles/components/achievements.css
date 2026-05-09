@@ -35,6 +35,35 @@
   pointer-events: none;
 }
 
+.achievement-image-grid {
+  display: grid;
+  width: 100%;
+  gap: 2px;
+}
+
+.achievement-image-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.achievement-image-grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.achievement-image-tile {
+  aspect-ratio: 4 / 5;
+}
+
+@media (max-width: 480px) {
+  .achievement-image-grid-2,
+  .achievement-image-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-image-tile {
+    aspect-ratio: 16 / 10;
+  }
+}
+
 .achievement-card-with-image .achievement-body {
   padding: 1.75rem 2rem 2rem;
   display: flex;
