@@ -90,18 +90,20 @@
 }
 
 .project-card-watermark {
+  display: block;
+  width: 100%;
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(1.75rem, 3.6vw, 2.75rem);
-  letter-spacing: -0.02em;
-  color: rgba(26, 24, 20, 0.5);
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  letter-spacing: -0.015em;
+  color: rgba(26, 24, 20, 0.55);
   z-index: 1;
   text-align: center;
-  line-height: 1.15;
+  line-height: 1.2;
   padding: 0 1rem;
-  max-width: 100%;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
 }
 
 .project-card-body {

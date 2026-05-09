@@ -55,7 +55,11 @@ export const achievementsData = [
     description: "Awarded **INR 1 Lakh prize** at the **Guinness World Record-certified** 30-hour innovation sprint — the *largest agentic-AI hackathon ever held*, with **1,941 adjudicated developers** across **700+ teams**. Built *Juno* (see Projects) for the *'Let AI Speak to Your Money'* challenge.",
     skills: ["Agentic AI", "Multi-Agent Systems", "Vertex AI", "Flutter", "MCP", "Cloud Run"],
     image: "/images/agentic-ai-day-podium.jpg",
-    imageAlt: "Top 3 winning teams on stage during Google Cloud Agentic AI Day 2025 closing ceremony, gold confetti falling"
+    imageAlt: "Top 3 winning teams on stage during Google Cloud Agentic AI Day 2025 closing ceremony, gold confetti falling",
+    link: {
+      url: "https://drive.google.com/drive/folders/1cvr_w2xa_Q_uR6WmOFlj13R-buiMEQ7H?usp=sharing",
+      label: "View submission"
+    }
   },
   {
     id: 2,
@@ -63,11 +67,13 @@ export const achievementsData = [
     issuer: "VIGNAN'S NIRULA Institute of Technology and Science for Women",
     date: "2024",
     description: "Awarded **Best Outgoing Student** among the B.Tech IT batch of **2020–2024** at VNITSW, recognizing top merit in academics, co-curriculars, and overall campus performance.",
-    skills: ["Academic Excellence", "Leadership", "Co-curriculars"],
-    images: [
-      { src: "/images/best-outgoing-1.jpeg", alt: "Best Outgoing Student award ceremony at VNITSW" },
-      { src: "/images/best-outgoing-2.jpeg", alt: "Best Outgoing Student recognition at VNITSW" }
-    ]
+    skills: ["Academic Excellence", "Leadership", "Co-curriculars", "Top Merit", "Department Recognition"],
+    image: "/images/best-outgoing-2.jpeg",
+    imageAlt: "Best Outgoing Student recognition at VNITSW",
+    link: {
+      url: "https://drive.google.com/drive/folders/1XbIEOGK1TiIXEYllnyi6C7TYoNTJv1rY?usp=sharing",
+      label: "View certificate"
+    }
   },
   {
     id: 3,
@@ -75,7 +81,11 @@ export const achievementsData = [
     issuer: "Educational Testing Service (ETS)",
     date: "2023",
     description: "Scored **319/340** on the GRE — **Quant: 168/170** *(95th Percentile)*, Verbal: 151/170. Demonstrates exceptional quantitative aptitude aligned with data-driven AI engineering.",
-    skills: ["Quantitative Reasoning", "Analytical Writing", "Verbal Reasoning"]
+    skills: ["Quantitative Reasoning", "Analytical Writing", "Verbal Reasoning"],
+    link: {
+      url: "https://drive.google.com/file/d/1Y7cVY3Ptp1NgQIE1VZQPTeaNO53Xx_DT/view?usp=sharing",
+      label: "View score card"
+    }
   },
   {
     id: 4,
@@ -83,6 +93,10 @@ export const achievementsData = [
     issuer: "IEEE Conference, B.M Institute of Engineering and Technology, Sonipat",
     date: "May 2024",
     description: "Co-authored *'Dynamic Sign Language Detection System using MediaPipe Holistic and LSTM-based Deep Learning Model'* presented at the **IEEE conference** under Emerging Innovations and Advanced Computing organized by Novel Research Foundation — May 2024.",
-    skills: ["Research", "Deep Learning", "LSTM", "MediaPipe", "Sign Language Recognition"]
+    skills: ["Research", "Deep Learning", "LSTM", "MediaPipe", "Sign Language Recognition"],
+    link: {
+      url: "https://ieeexplore.ieee.org/document/10664073",
+      label: "View on IEEE Xplore"
+    }
   }
 ];

@@ -1,7 +1,7 @@
 export const skillsData = {
   languages: {
     title: "Languages",
-    skills: ["Python", "Java", "SQL"]
+    skills: ["Java", "Python", "SQL"]
   },
   aiMlAgentic: {
     title: "AI/ML & Agentic",
@@ -18,20 +18,16 @@ export const skillsData = {
       "Matplotlib"
     ]
   },
-  webMobile: {
-    title: "Web & Mobile",
-    skills: ["React", "Flutter", "FastAPI", "REST", "JSON-RPC"]
-  },
   databases: {
     title: "Databases",
-    skills: ["MongoDB", "MySQL", "BigQuery", "Firestore"]
+    skills: ["MongoDB", "MySQL", "BigQuery"]
   },
-  cloudDevops: {
-    title: "Cloud & DevOps",
+  devopsTools: {
+    title: "DevOps & Tools",
     skills: [
-      "GCP (Cloud Run, Vertex AI, Firebase, VMs)",
-      "Docker",
+      "GCP (Cloud Run, Vertex AI)",
       "Git",
+      "Docker",
       "JIRA",
       "Confluence"
     ]
@@ -40,6 +36,5 @@ export const skillsData = {
 
 export const languages = [
   { name: "English", level: "Fluent" },
-  { name: "Telugu", level: "Native" },
-  { name: "Hindi", level: "Fluent" }
+  { name: "Telugu", level: "Native" }
 ];

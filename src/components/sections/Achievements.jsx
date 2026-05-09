@@ -7,13 +7,10 @@ import '../../styles/components/achievements.css';
 const AchievementCard = ({ achievement }) => {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
-  const hasImages = Array.isArray(achievement.images) && achievement.images.length > 0;
-  const hasMedia = Boolean(achievement.image) || hasImages;
-
   return (
     <article
       ref={ref}
-      className={`achievement-card glass-flat fade-in ${inView ? 'is-visible' : ''} ${hasMedia ? 'achievement-card-with-image' : ''}`}
+      className={`achievement-card glass-flat fade-in ${inView ? 'is-visible' : ''} ${achievement.image ? 'achievement-card-with-image' : ''}`}
     >
       {achievement.image && (
         <div
@@ -22,20 +19,6 @@ const AchievementCard = ({ achievement }) => {
           aria-label={achievement.imageAlt}
           style={{ backgroundImage: `url(${achievement.image})` }}
         />
-      )}
-
-      {hasImages && (
-        <div className={`achievement-image-grid achievement-image-grid-${achievement.images.length}`}>
-          {achievement.images.map((img) => (
-            <div
-              key={img.src}
-              className="achievement-image achievement-image-tile"
-              role="img"
-              aria-label={img.alt}
-              style={{ backgroundImage: `url(${img.src})` }}
-            />
-          ))}
-        </div>
       )}
 
       <div className="achievement-body">
@@ -54,6 +37,17 @@ const AchievementCard = ({ achievement }) => {
             <span key={skill} className="achievement-tag">{skill}</span>
           ))}
         </div>
+
+        {achievement.link && (
+          <a
+            href={achievement.link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="achievement-link"
+          >
+            {achievement.link.label} <span className="arrow">↗</span>
+          </a>
+        )}
       </div>
     </article>
   );
