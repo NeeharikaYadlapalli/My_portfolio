@@ -1,4 +1,4 @@
-# Sreenivas Gurram - AI/ML Portfolio
+# Neeharika Yadlapalli - AI/ML Portfolio
 
 A modern, responsive portfolio website showcasing AI/ML expertise and projects. Built with React and designed with cutting-edge animations and interactive elements.
 
@@ -23,7 +23,7 @@ A modern, responsive portfolio website showcasing AI/ML expertise and projects. 
 ## 📁 Project Structure
 
 ```
-sreenivas-portfolio/
+neeharika-portfolio/
 ├── public/
 │   ├── index.html
 │   ├── manifest.json
@@ -52,8 +52,8 @@ sreenivas-portfolio/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/LSG-hub/portfolio.git
-cd sreenivas-portfolio
+git clone https://github.com/NeeharikaYadlapalli/portfolio.git
+cd neeharika-portfolio
 ```
 
 2. **Install dependencies**
@@ -176,7 +176,7 @@ This project is open source and available under the [MIT License](LICENSE).
 If you encounter any issues or have questions:
 
 - Create an issue on GitHub
-- Contact: [srinu202012@gmail.com](mailto:srinu202012@gmail.com)
+- Contact: [neeharika.yadlapalli@gmail.com](mailto:neeharika.yadlapalli@gmail.com)
 
 ## 🙏 Acknowledgments
 
@@ -187,4 +187,4 @@ If you encounter any issues or have questions:
 
 ---
 
-**Made with ❤️ and AI precision by Sreenivas Gurram**
+**Made with ❤️ and AI precision by Neeharika Yadlapalli**
